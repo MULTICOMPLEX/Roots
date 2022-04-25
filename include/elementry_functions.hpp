@@ -133,7 +133,7 @@ template <typename elem, int order>
 multicomplex<elem, order> pow
 (
   const multicomplex<elem, order>& b,
-  double exp
+  REAL exp
 )
 {
   return pow(b, static_cast<multicomplex<elem, order>>(exp));
@@ -145,7 +145,7 @@ multicomplex<elem, order> pow
 template <typename elem, int order>
 multicomplex<elem, order> pow
 (
-  const double b,
+  const REAL b,
   const multicomplex<elem, order>& exp
 )
 {
